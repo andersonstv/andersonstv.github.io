@@ -2,6 +2,9 @@
     <head>
         <title>Portfolio - Anderson Santos</title>
         <style>
+            .seccao {
+                padding: 9px;
+            }
             .icones {
                 height: 48px;
                 width: 48px;
@@ -11,16 +14,18 @@
                 font-weight: 700;
                 font-size:32px;
                 background: #d0d5f5;
+                padding: 4px;
             }
             .header {
-                padding: 64px;
+                padding: 120px;
                 text-align: center;
+                background-size: 1000px;
                 background: #704980;
                 color: whitesmoke;
-                font-size: 32px;
+                font-size: 46px;
             }
             img {
-                padding: 6px;
+                padding: 0px;
             }
             a {
                 color: inherit;
@@ -36,8 +41,11 @@
                 font-size: 16px;
             }
             #perfil {
-                height: 300px;
-                width: 300px;
+                padding: 8px;
+                padding-top: 0px;
+                float: left;
+                height: 250px;
+                width: 250px;
             }
         </style>
     </head>
@@ -47,10 +55,10 @@
                 <h1>Hello, World! I'm Anderson</h1>
                 <p>Computer Science student and game dev enthusiast</p>
             </div>
-            <div>
-                <img id= "perfil" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4"/>
+            <div class="seccao">
                 <article>
                     <h1 class="titulos">About</h1>
+                    <img id= "perfil" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4"/>
                     <p> I'm Anderson Santos Silva, a 18 years old aspiring developer from Patos, a small town in Pariba, Brazil. I'm currently an undergraduate student in Computer
                         Science at <a href="http://www.computacao.ufcg.edu.br/"> Universidade Federal de Campina Grande</a>.
                         Since I was a kid, I had a passion for computers and all things related to technology, I would be amazed everytime I had the opportunity
@@ -61,7 +69,8 @@
                         process of game development, and how could I become a game developer myself.
 
                 </article>
-            <div>
+            </div>
+            <div class="seccao">
                 <article>
                     <h1 class="titulos">Skills</h1>
                     <p>Programming Languages:</p>
