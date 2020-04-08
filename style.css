@@ -23,11 +23,11 @@ html, body{
 }
 .titulos{
     clear: both;
-    color: #040a36;
-    font-family: 'fira-sans-black';
-    font-weight: 400;
+    background-color: #704980;
+    font-family: 'roboto-mono-medium';
+    font-weight: 500;
     font-size:32px;
-    background: #d0d5f5;
+    color: whitesmoke;
     padding: 4px;
     border-radius: 5px;
 }
