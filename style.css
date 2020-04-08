@@ -84,3 +84,7 @@ li {
     font-style: italic;
     color: darkgray;
 }
+#idioma {
+    position: absolute;
+    color: whitesmoke;
+}
