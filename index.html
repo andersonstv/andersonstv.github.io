@@ -2,6 +2,9 @@
     <head>
         <title>Portfolio - Anderson Santos</title>
         <style>
+            html, body{
+                scroll-behavior: smooth;
+            }
             @font-face {
                 font-family: "fira-sans-regular";
                 src: url("./FiraSans-Regular.ttf") format("truetype");
@@ -19,6 +22,7 @@
             .icones {
                 height: 56x;
                 width: 56px;
+                padding: 1px;
             }
             .titulos{
                 clear: both;
@@ -38,6 +42,7 @@
                 font-size: 42px;
                 text-align: center;
                 justify-content: center;
+                align-items: center;
             }
             a {
                 color: inherit;
@@ -64,6 +69,19 @@
                 height: 15vmax;
                 width: 15vmax;
             }
+            #about {}
+            .arrow {
+                width: 0; 
+                height: 0   ; 
+                border-left: 20px solid transparent;
+                border-right: 20px solid transparent;
+                border-top: 20px solid whitesmoke;
+            }
+            #atribution {
+                font-size: 12px;
+                font-style: italic;
+                color: darkgray;
+            }
         </style>
     </head>
     <body>
@@ -71,11 +89,12 @@
             <div class="header">
                 <h1>Hello, World! I'm Anderson</h1>
                 <p>Computer Science student and game dev enthusiast</p>
+                <a href="#about" class="arrow" alt="About Section"></a>
             </div>
-            <div class="seccao">
+            <div class="seccao" id="about">
                 <article>
                     <h1 class="titulos">About</h1>
-                    <img id= "perfil" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4"/>
+                    <img id= "perfil" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4" alt="Profile Picture"/>
                     <p> I'm Anderson Santos Silva, a 18 years old aspiring developer from Patos, a small town in Paraiba, Brazil. I'm currently an undergraduate student in Computer
                         Science at <a href="http://www.computacao.ufcg.edu.br/"> Universidade Federal de Campina Grande</a>.
                         Since I was a kid, I had a passion for computers and all things related to technology. This passion only grew when I got my first computer,
@@ -101,8 +120,20 @@
             <div>
                 <article>
                         <h1 class="titulos">Contact Info</h1>
-                        <a href="https://www.linkedin.com/in/anderson-dos-santos-81101017a/"><img class = "icones" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn"></a>
-                        <a href="https://github.com/andersonstv"><img class = "icones" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"></a>
+                        <a href="https://www.linkedin.com/in/anderson-dos-santos-81101017a/">
+                            <img class = "icones" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn Profile">
+                        </a>
+                        <a href="https://github.com/andersonstv">
+                            <img class = "icones" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Profile">
+                        </a>
+                        
+                        <a href="https://dev.to/andersonstv">
+                              <img class = "icones" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="DEV Profile">
+                         </a>
+                         <a href="mailto:anderson.santos.silva@ccc.ufcg.edu.br">
+                             <img class="icones" src = "https://image.flaticon.com/icons/svg/732/732200.svg" alt= "E-Mail Adress">
+                         </a>
+                         <p id="atribution">"Mail Icon made by Pixel perfect from www.flaticon.com"</p>
                 </article>
             </div>
         </div>
