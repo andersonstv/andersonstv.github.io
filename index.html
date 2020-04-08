@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Portfolio - Anderson Santos</title>
+        <title>Anderson Santos - Portfolio</title>
         <style>
             html, body{
                 scroll-behavior: smooth;
@@ -14,6 +14,10 @@
             @font-face {
                 font-family: "fira-sans-black";
                 src: url("./FiraSans-Black.ttf") format("truetype");
+            }
+            @font-face {
+                font-family: "roboto-mono-medium";
+                src: url("./RobotoMono-Medium.ttf") format("truetype");
             }
             *{
                 font-family: "fira-sans-regular";
@@ -75,6 +79,10 @@
                 border-radius: 10px;
             }
             #about {}
+            #headerTitle{
+                font-family: 'roboto-mono-medium';
+                font-size: 52px;
+            }
             .arrow {
                 width: 0; 
                 height: 0   ; 
@@ -92,7 +100,7 @@
     <body>
         <div>
             <div class="header">
-                <h1>Hello, World! I'm Anderson</h1>
+                <h1 id="headerTitle">Hello, World! I'm Anderson</h1>
                 <p>Computer Science student and game dev enthusiast</p>
                 <a href="#about" class="arrow" alt="About Section"></a>
             </div>
