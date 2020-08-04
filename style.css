@@ -21,6 +21,10 @@ html, body{
     width: 56px;
     padding: 1px;
 }
+.flags {
+    height: 28px;
+    width: 28px;
+}
 .titulos{
     clear: both;
     background-color: #704980;
@@ -46,7 +50,6 @@ a {
     color: inherit;
     text-decoration: none;
     font-weight: 700;
-    font-size: 20px;
 }
 a:hover{
     color: steelblue;
@@ -79,7 +82,7 @@ li {
     border-right: 20px solid transparent;
     border-top: 20px solid whitesmoke;
 }
-#atribution {
+.atribution {
     font-size: 12px;
     font-style: italic;
     color: darkgray;
