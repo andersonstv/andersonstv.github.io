@@ -2,56 +2,90 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Anderson Santos - Portfolio</title>
+        <link rel="icon" href="images\icon.svg">
         <link href=".\style.css" rel="stylesheet">
     </head>
     <body>
-        <a id ="idioma" href=".\ptbr.html">EN</a>
-            <div class="header">
-                <h1 id="headerTitle">Hello, World! I'm Anderson</h1>
-                <p>Computer Science student and software developer</p>
-                <a href="#about" class="arrow" alt="About Section"></a>
-            </div>
-            <section id="about">
-                    <h1 class="titulos">About</h1>
-                    <img id= "perfil" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4" alt="Profile Picture"/>
-                    <p> I'm Anderson Santos Silva, a 21-year-old developer from a small town in Brazil. Currently studying Computer
-                        Science at <a href="http://www.computacao.ufcg.edu.br/">Federal University of Campina Grande (UFCG)</a>.
-                        Since I was a kid, I had an interest in computers and all things technology-related, as I grew older, this interest became a desire to pursue a career in tech.
-                        I'm interested in developing new skills, mastering new technologies and learning more about Computer Science, specially in the areas of Game Development, Natural Language Processing and Web Development.
-                    <div style="clear: both;"></div>
-            </section>
-            <section id="skills">
-                    <h1 class="titulos">Skills</h1>
-                    <p>Programming Languages and Tools:</p>
-                    <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="Python Logo" title="Python">
-                    <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java Logo" title="Java">
-                    <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg" alt="Git Icon" title="Git">
-                    
-                    <p>Languages:</p>
-                    <ul>
-                        <li>Portuguese <img class="flags" src="images\brazil.png" title="Brazil Flag"></li>
-                        <li>English <img class="flags" src="images\united-kingdom.png" title="Bandeira Reino Unido"></li>
-                    </ul>
-            </section>
-            <section id="contact">
-                        <h1 class="titulos">Contact</h1>
-                        <a href="mailto:anderson.santos.silva@ccc.ufcg.edu.br">
-                            <img class="icones" src = "images/gmail.png" alt= "E-Mail Adress" title="E-Mail Adress">
+        <header>
+            <h1 id="header-title">Hello, World! I'm Anderson</h1>
+            <p>Computer Science student and software developer</p>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <a href="#about" class="arrow"></a>
+        </header>
+        <section class="main-section" id="about">
+                <h2 class="section-titles">About</h2>
+                <img id= "profile-img" src="https://avatars1.githubusercontent.com/u/50351113?s=400&v=4" alt="Profile Picture"/>
+                <p> I'm Anderson Santos Silva, a 21-year-old developer from a small town in Brazil. Currently studying Computer
+                    Science at <a href="http://www.computacao.ufcg.edu.br/">Federal University of Campina Grande (UFCG)</a>.
+                    I'm interested in developing new skills, mastering new technologies and learning more about Computer Science, specially in the areas of Natural Language Processing and Web Development.
+                <div style="clear: both;"></div>
+        </section>
+        <section class="main-section" id="skills">
+                <h2 class="section-titles">Skills</h2>
+                <p>Programming Languages and Tools:</p>
+                <section id="skills-listing">
+                    <p class="skill"><img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo" title="Python"> PYTHON</p>
+                    <p class="skill"><img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java Logo" title="Java"> JAVA</p>
+                    <p class="skill"><img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Icon" title="Git"> Git</p>
+                </section>
+                </ul>
+        </section>
+        <section class="main-section" id="projects">
+            <h2 class="section-titles">Projects</h2>
+            <section id="project-listing">
+                <article class="project-card">
+                    <h3>NLW eSports Ignite</h3>
+                    <div class="card-content">
+                        <p>Projeto desenvolvido na trilha Ignite durante a NLW eSports da Rocketseat.</p>
+                        <a href="https://github.com/andersonstv/nlw-esports-ignite">
+                            <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
                         </a>
-                        <a href="https://github.com/andersonstv">
-                            <img class = "icones" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Profile" title="GitHub Profile">
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Linear Regression</h3>
+                    <div class="card-content">
+                        <p>Relatório de Regressão Linear Simples desenvolvindo durante a disciplina Estatística Aplicada.</p>
+                        <a href="https://github.com/andersonstv/estatistica-regressao-linear">
+                            <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
                         </a>
-                        <a href="https://www.linkedin.com/in/anderson-dos-santos-81101017a/">
-                            <img class = "icones" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn Profile" title="LinkedIn Profile">
-                        </a>    
-                        <a href="https://dev.to/andersonstv">
-                              <img class = "icones" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="DEV Profile" title="DEV Profile">
+                        <a href="https://andersonstv.github.io/estatistica-regressao-linear/relatorio.html">
+                            <img class="icones" src="images/globe.svg"/>
                         </a>
-
-                        <div class="atribution">    
-                            <a href="https://www.flaticon.com/free-icons/gmail" title="Freepik icons">Gmail, Brazil, Uk icons created by Freepik - Flaticon</a>
-                        </div> 
+                    </div>
+                </article>
+                <article class="project-card">
+                    <h3>Dice Engine</h3>
+                    <div class="card-content">
+                        <p>A simple engine for simulating dice rolls. The purpose of this package is to handle dice expressions, from parsing to generating pseudo-random numbers. </p>
+                        <a href="https://github.com/andersonstv/dice-engine">
+                            <img class="icones" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"/>
+                        </a>
+                    </div>
+                </article>
             </section>
+        </section>
+        <section class="main-section" id="contact">
+                    <h2 class="section-titles">Contact</h2>
+                    <a href="mailto:anderson.santos.silva@ccc.ufcg.edu.br">
+                        <img class="icones" src = "images/mail.svg" alt= "E-Mail Adress" title="E-Mail Adress">
+                    </a>
+                    <a href="https://github.com/andersonstv">
+                        <img class = "icones" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Profile" title="GitHub Profile">
+                    </a>
+                    <a href="https://www.linkedin.com/in/anderson-dos-santos-81101017a/">
+                        <img class = "icones" src="https://content.linkedin.com/content/dam/me/business/en-us/amp/brand-site/v2/bg/LI-Bug.svg.original.svg" alt="LinkedIn Profile" title="LinkedIn Profile">
+                    </a>    
+                    <a href="https://dev.to/andersonstv">
+                            <img class = "icones" src="https://d2fltix0v2e0sb.cloudfront.net/dev-badge.svg" alt="DEV Profile" title="DEV Profile">
+                    </a>
+        </section>
     </body>
 </html>
