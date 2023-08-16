@@ -110,9 +110,10 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.2rem;
+    padding: 0.3rem;
     gap: 0.2rem;
-    border: solid;
+    border: solid; 
+    margin-top: 0;
 }
 .skill img{
     height: 32px;
