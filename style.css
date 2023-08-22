@@ -45,6 +45,13 @@ nav {
     font-size: 2rem;
     margin: 2rem;
 }
+nav li {
+    all: unset;
+}
+nav li + li:before{
+    content: " | ";
+    padding: 0 2rem;
+}
 a { 
     color: inherit;
     text-decoration: none;
